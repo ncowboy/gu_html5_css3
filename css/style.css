@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #222222;
+    font-size: 27px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__search_form {
+    display: flex;
+    align-items: center;
+    padding-left: 37px;
+}
+
+.header__search_form__brands,
+.header__search_form__submit {
+    height: 38px;
+}
+
+.header__search_form__text {
+    height: 36px;
+    border-width: 2px;
+}
+
+
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo-d {
+    color: #f16d7f;
+    font-weight: 400;
+    letter-spacing: 0.68px;
+}
+
+.logo-img {
+    margin-right: 13px;
+}
+
+.button {
+    height: 38px;
+    line-height: 38px;
+    padding-left: 19px;
+    padding-right: 19px;
+    background-color: #f16d7f;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+
+    letter-spacing: 0.38px;
+    text-decoration: none;
+}
+
+.navigation {
+    background-color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.menu-link {
+    padding: 15px;
+    display: block;
+    color: #222222;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+    text-decoration: none;
+}
+
+.promo {
+    background-color: #e8e8e8;
+}
+
+.promo-content {
+    height: 613px;
+    background-image: url('../img/promo-back.jpg');
+    background-position: 0 -51px;
+    display: flex;
+    align-items: center;
+}
+
+.promo-p {
+    color: #222222;
+font-size: 40px;
+font-weight: 700;
+text-transform: uppercase;
+    line-height: 33px;
+}
+
+.promo-h3 {
+    color: #222222;
+font-size: 60px;
+font-weight: 700;
+text-transform: uppercase;
+    line-height: 45px;
+    margin-bottom: 12px;
+}
+
+.pink {
+    color: #f16d7f;
+}
+
+.promo-text {
+    border-left: 12px solid #f16d7f;
+    padding-left: 12px;
+}
