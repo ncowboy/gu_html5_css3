@@ -17,17 +17,17 @@ body {
   background-color: #fff;
   font-weight: 600;
   padding: 16px 20px;
+  text-transform: uppercase;
 }
 
 .category-badge-promo{
-  text-transform: uppercase;
   font-size: 18px;
+  color: #222222;
 }
 
 .category-badge-name{
-  text-transform: uppercase;
   color: #f16d7f;
-  font-size: 18px;
+  font-size: 31px;
 }
 
 .category-grid {
@@ -38,6 +38,9 @@ body {
 
 .category-grid-block {
   position: relative;
+}
+.category-grid-block img:hover{
+  opacity: 0.5;
 }
 
 .category-for-men{
@@ -67,8 +70,11 @@ body {
 }
 
 .fa-sort-down {
-  vertical-align: text-top;
   margin-left: 6px;
+}
+.fa-sort-down:before {
+  position: relative;
+  top: -2px;
 }
 
 .header-flex {
@@ -159,6 +165,10 @@ body {
   align-items: center;
 }
 
+.logo-bran {
+  font-weight: 400;
+}
+
 .logo-d {
   color: #f16d7f;
   font-weight: 400;
@@ -204,6 +214,76 @@ body {
 }
 .menu-link:hover {
   color: #f16d7f;
+}
+
+.products-container{
+  text-align: center;
+}
+
+.products-h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.products-item{
+  max-width: 25%;
+  margin-bottom: 40px;
+}
+
+.products-item-wrapper {
+  padding-bottom: 21px;
+  text-align: left;
+}
+
+.products-item-img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.products-item-img-wrapper {
+  width: 100%;
+  height: 280px;
+}
+
+.products-item:hover .products-item-wrapper {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+}
+.products-item:hover .products-item-img {
+  opacity: 0.3;
+}
+
+.products-item:hover .products-item-img-wrapper {
+  background-color: #333;
+}
+
+.products-item-name{
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 17px;
+  margin-left: 14px;
+}
+
+.products-item-price{
+  color: #f16d7f;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-left: 14px;
+}
+.products-items-container{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.products-subheader {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9f9f9f;
+  margin-top: 12px;
 }
 
 .promo {
