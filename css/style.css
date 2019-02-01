@@ -673,5 +673,9 @@ body {
 }
 
 .header-cart:hover {
-   background-image: url('../img/cart-hover.svg');
+    background-image: url('../img/cart-hover.svg');
+}
+
+.footer-top-wrapper {
+    display: flex;
 }
