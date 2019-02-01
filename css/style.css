@@ -191,9 +191,7 @@ body {
     text-decoration: none;
 }
 
-.header-right__account_button {
-    margin-left: 26px;
-}
+
 
 .header__search_form {
     display: -webkit-box;
@@ -247,6 +245,7 @@ body {
     height: 36px;
     border: 1px solid #e6e6e6;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
 .header__search_form__text placeholder {
@@ -662,4 +661,17 @@ body {
     border-radius: 0 23px 23px 0;
     outline: 0;
     cursor: pointer;
+}
+
+.header-cart {
+    width: 32px;
+    height: 29px;
+    padding: 3px 13px;
+    background-image: url('../img/cart.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-cart:hover {
+   background-image: url('../img/cart-hover.svg');
 }
