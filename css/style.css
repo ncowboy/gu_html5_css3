@@ -815,14 +815,14 @@ body {
 }
 
 .new-arrivals-h2 {
-    color:  #f16d7f;
+    color: #f16d7f;
     font-size: 24px;
     font-weight: 900;
     text-transform: uppercase;
 }
 
 .new-arrivals-nav {
-    color:  #636363;
+    color: #636363;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -845,4 +845,79 @@ body {
 .new-arrivals-bredcrumbs {
     -ms-flex-item-align: center;
     align-self: center;
+}
+
+.catalog-menu-category {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 14px 10px;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border-left: 5px solid #ef5b70;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.catalog-menu-category:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f0de';
+    vertical-align: top;
+}
+
+.catalog-menu-category::-webkit-details-marker {
+    display: none;
+}
+
+
+.catalog-menu-section[open] > .catalog-menu-category {
+    color: #ef5b70;
+}
+
+.catalog-menu-section[open] > .catalog-menu-category:after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f0dd';
+    vertical-align: top;
+}
+
+
+
+
+.catalog-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.catalog-menu {
+    width: 25%;
+}
+
+.catalog-menu-sections-list {
+    list-style: none;
+    margin-left: 12px;
+    margin-top: 20px;
+}
+
+.catalog-menu-section {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 16px;
+    color: #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.catalog-menu-section:hover {
+    color: #ef5b70;
 }
