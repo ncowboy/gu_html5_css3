@@ -854,7 +854,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 14px 10px;
+    padding: 14px 0px 14px 10px;
     color: #6f6e6e;
     font-size: 14px;
     font-weight: 700;
@@ -900,6 +900,7 @@ body {
 
 .catalog-menu {
     width: 25%;
+    padding-right: 28px;
 }
 
 .catalog-menu-sections-list {
@@ -920,4 +921,88 @@ body {
 
 .catalog-menu-section:hover {
     color: #ef5b70;
+}
+.catalog-filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 75%;
+    padding-left: 28px;
+    margin-top: 
+}
+
+.catalog-filter-header {
+    color:  #6f6e6e;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.catalog {
+    padding-top: 60px;
+}
+
+
+
+.catalog-filter-trend {
+    display: inline-block;
+    text-decoration: none;
+    color:  #6f6e6e;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;  
+    border-right: 1px solid #ebebeb;
+    padding: 5px 8px;
+}
+.catalog-filter-trend:hover {
+    color: #f16d7f;
+}
+
+.catalog-filter-trend:nth-last-child(1) {
+    border-right: 0;
+}
+
+.catalog-filter-trend:nth-child(1) {
+    padding-left: 0;
+}
+
+.catalog-filters-filter {
+    width: 33%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 115px;
+}
+
+.catalog-size-form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 25%;
+}
+
+.catalog-filter-sizes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.catalog-checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.catalog-checkbox + label:before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid black;
+    background-color: red;
 }
