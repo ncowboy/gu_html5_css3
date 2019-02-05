@@ -446,10 +446,11 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    position: relative;
 }
 
 .menu-link {
-    padding: 15px;
+    padding: 17px 24px;
     display: block;
     color: #222222;
     font-size: 14px;
@@ -457,6 +458,8 @@ body {
     text-transform: uppercase;
     text-decoration: none;
 }
+
+
 
 .menu-link-active {
     border-bottom: 3px solid #f16d7f;
@@ -1122,7 +1125,7 @@ body {
 }
 
 .catalog-body {
-     padding-left: 28px;
+    padding-left: 28px;
 }
 
 .catalog-options {
@@ -1173,7 +1176,7 @@ body {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    
+
 }
 
 .catalog-options-show {
@@ -1206,4 +1209,84 @@ catalog-item-like {
     width: 57px
 }
 
-.
+.menu-dropdown {
+    display: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    position: absolute;
+    padding: 20px 25px;
+    top: 42px;
+}
+
+.menu-dropdown:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(45deg);
+        top: -5px;
+    left: 59px;
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+}
+.menu-dropdown:nth-last-of-type(1) {
+    left: 0;
+}
+
+.menu-dropdown-header {
+    color: #232323;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+}
+
+.menu-dropdown-link {
+    display: block;
+    color: #646464;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 28px;
+}
+
+.menu-dropdown-link:hover {
+    color: #f16d7f;
+}
+.menu-dropdown-col {
+    width: 235px;
+    margin-left: 46px;
+}
+
+.menu-dropdown-col:first-of-type {
+    margin-left: 0;
+}
+
+.menu-dropdown-colgroup {
+    margin-bottom: 24px;
+}
+
+.menu-dropdown-colgroup:last-child {
+    margin-bottom: 0;
+}
+
+.menu-dropdown-ads {
+    position: relative;
+}
+
+.menu-dropdown-ads > a {
+    position: absolute;
+    left: -24px;
+}
+
+.menu li:hover .menu-dropdown {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
