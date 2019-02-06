@@ -22,7 +22,9 @@
                 </form>
             </div>
             <div class="header-right">
-                <a href="#" class="header-cart"></a>
+                <a href="#" class="header-cart">
+                    <div class="header-cart-count"><span>2</span></div>
+                </a>
                 <a class="button header-right__account_button" href="#">My Account <i class="fas fa-sort-down"></i></a>
             </div>
         </div>
@@ -30,8 +32,8 @@
     <nav class="navigation">
         <div class="container">
             <ul class="menu">
-                <li><a href="index.html" class="menu-link menu-link-active">Home</a></li>
-                <li><a href="product.html" class="menu-link">Man</a>
+                <li class="menu-item"><a href="index.html" class="menu-link menu-link-active">Home</a></li>
+                <li class="menu-item"><a href="product.html" class="menu-link">Man</a>
                     <div class="menu-dropdown">
                         <div class="menu-dropdown-col">
                             <div class="menu-dropdown-colgroup">
@@ -80,7 +82,7 @@
                     </div>
                 </li>
 
-                <li><a href="product.html" class="menu-link">Women</a>
+                <li class="menu-item"><a href="product.html" class="menu-link">Women</a>
                     <div class="menu-dropdown">
                         <div class="menu-dropdown-col">
                             <div class="menu-dropdown-colgroup">
@@ -128,7 +130,7 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="product.html" class="menu-link">Kids</a>
+                <li class="menu-item"><a href="product.html" class="menu-link">Kids</a>
                     <div class="menu-dropdown">
                         <div class="menu-dropdown-col">
                             <div class="menu-dropdown-colgroup">
@@ -176,7 +178,7 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="product.html" class="menu-link">Accoseriese</a>
+                <li class="menu-item"><a href="product.html" class="menu-link">Accoseriese</a>
                     <div class="menu-dropdown">
                         <div class="menu-dropdown-col">
                             <div class="menu-dropdown-colgroup">
@@ -224,8 +226,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="#products" class="menu-link">Featured</a></li>
-                <li><a href="#" class="menu-link">Hot Deals </a></li>
+                <li class="menu-item"><a href="#products" class="menu-link">Featured</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Hot Deals </a></li>
             </ul>
         </div>
     </nav>
@@ -570,7 +572,9 @@
 
         </div>
     </div>
-
+    <script>
+        console.log(document.getElementsByClassName('menu-dropdown'));
+    </script>
 </body>
 
 </html>

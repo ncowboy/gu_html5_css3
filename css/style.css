@@ -321,6 +321,33 @@ body {
     background-image: url('../img/cart.svg');
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+
+.header-cart-count {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    top: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #f16d7f;
+}
+
+.header-cart-count span {
+    display: block;
+    -ms-align-self: center;
+    align-self: center;
 }
 
 .header-cart:hover {
@@ -488,7 +515,7 @@ body {
     text-decoration: none;
     top: 98px;
     left: 70px;
-    padding: 7px 12px;
+    padding: 7px 13px;
     border: 1px solid #fff;
 }
 
@@ -1193,20 +1220,37 @@ body {
     max-width: 33%;
 }
 
+.catalog-item:hover .catalog-item-hover {
+    opacity: 1;
+}
+
+
 .catalog-items-container {
     margin-top: 48px;
 }
 
-.catalog-item-social {
-    position: absolute;
-    top: 120px;
-    left: 70px;
+.catalog-item-social .fas,
+.catalog-item-social .far {
+    color: #fff;
 }
 
+
+
+
 .catalog-item-retweet,
-catalog-item-like {
-    height: 38px;
-    width: 57px
+.catalog-item-like {
+    padding: 9px 19px;
+    border: 1px solid #fff;
+}
+
+.catalog-item-retweet:hover,
+.catalog-item-like:hover {
+    border-color: #f16d7f;
+}
+
+.catalog-item-retweet:hover i,
+.catalog-item-like:hover i {
+    color: #f16d7f;
 }
 
 .menu-dropdown {
@@ -1215,8 +1259,10 @@ catalog-item-like {
     background-color: #ffffff;
     border: 1px solid #e8e8e8;
     position: absolute;
+    z-index: 10;
     padding: 20px 25px;
     top: 42px;
+    right: 0;
 }
 
 .menu-dropdown:before {
@@ -1226,13 +1272,10 @@ catalog-item-like {
     background-color: #fff;
     position: absolute;
     transform: rotate(45deg);
-        top: -5px;
+    top: -5px;
     left: 59px;
     border-top: 1px solid #e8e8e8;
     border-left: 1px solid #e8e8e8;
-}
-.menu-dropdown:nth-last-of-type(1) {
-    left: 0;
 }
 
 .menu-dropdown-header {
@@ -1257,6 +1300,7 @@ catalog-item-like {
 .menu-dropdown-link:hover {
     color: #f16d7f;
 }
+
 .menu-dropdown-col {
     width: 235px;
     margin-left: 46px;
@@ -1289,4 +1333,123 @@ catalog-item-like {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+}
+
+.menu-item:nth-of-type(3) .menu-dropdown:before {
+    left: 165px;
+}
+
+.menu-item:nth-of-type(4) .menu-dropdown:before {
+    left: 245px;
+}
+
+.menu-item:nth-of-type(5) .menu-dropdown:before {
+    left: 385px;
+}
+
+.catalog-cart {
+    position: static;
+    display: flex;
+}
+
+.catalog-item-hover {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+    top: 98px;
+    left: 70px;
+    opacity: 0;
+}
+
+.catalog-item-social a {}
+
+.catalog-item-social {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.catalog-controls {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+}
+
+.catalog-pagination {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+}
+
+.catalog-pagination-item {
+    -ms-align-self: center;
+    align-self: center;
+    color: #c4c4c4;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 8px;
+}
+
+.catalog-pagination-item:hover {
+    color: #ef5b70;
+}
+.catalog-pagination-inactive:hover {
+    color:  #c4c4c4;
+}
+
+.catalog-pagination-button {
+    padding: 12px 44px;
+    background-color: #fff;
+    text-transform: capitalize;
+    border: 1px solid #ef5b70;    
+    color: #ef5b70;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.catalog-pagination-button:hover {
+    background-color: #f16d7f;
+    color: #fff;
+}
+
+.catalog-pagination-button:active {
+    outline: 1px dotted #000;
+}
+
+.feature-hor {
+    background-color: #222224;
+    color: #fbfbfb;
+    text-align: center;
+}
+
+.feature-hor-item {
+    padding: 89px 38px 110px 38px;
+}
+
+.feature-hor-img {
+    margin-bottom: 30px;
+    height: 40px;
 }
