@@ -208,9 +208,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: none;
     -ms-flex-positive: none;
-    flex-grow: none;
 }
 
 .footer-top-nav {
@@ -333,7 +331,6 @@ body {
     justify-content: center;
     position: absolute;
     right: 4px;
-    top: 4px;
     top: 0;
     color: #fff;
     text-align: center;
@@ -355,6 +352,7 @@ body {
 }
 
 .header__search_form {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -501,8 +499,6 @@ body {
 }
 
 .products-button {
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin: 0 auto;
 }
@@ -873,17 +869,24 @@ body {
 }
 
 .new-arrivals-link {
-    color: #f16d7f;
+    color: #636363;
+    font-weight: 700;
     text-decoration: none;
+    margin: 0 5px;
+}
+
+.new-arrivals-link:hover {
+    color: #f16d7f;
     font-weight: 700;
 }
+
 
 .new-arrivals {
     padding: 65px 0;
     background-color: #f8f3f4;
 }
 
-.new-arrivals-bredcrumbs {
+.new-arrivals-breadcrumbs {
     -ms-flex-item-align: center;
     align-self: center;
 }
@@ -895,7 +898,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 14px 0px 14px 10px;
+    padding: 14px 0 14px 10px;
     color: #6f6e6e;
     font-size: 14px;
     font-weight: 700;
@@ -912,7 +915,7 @@ body {
 }
 
 .catalog-menu-category:after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free", sans-serif;
     content: '\f0de';
     vertical-align: top;
 }
@@ -927,7 +930,7 @@ body {
 }
 
 .catalog-menu-section[open] > .catalog-menu-category:after {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free", sans-serif;
     content: '\f0dd';
     vertical-align: top;
 }
@@ -976,7 +979,6 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-top:
 }
 
 .catalog-filter-header {
@@ -1266,6 +1268,12 @@ body {
     right: 0;
 }
 
+.menu-dropdown-browse {
+    display: block;
+    left: 0;
+}
+
+
 .menu-dropdown:before {
     content: '';
     width: 8px;
@@ -1416,15 +1424,16 @@ body {
 .catalog-pagination-item:hover {
     color: #ef5b70;
 }
+
 .catalog-pagination-inactive:hover {
-    color:  #c4c4c4;
+    color: #c4c4c4;
 }
 
 .catalog-pagination-button {
     padding: 12px 44px;
     background-color: #fff;
     text-transform: capitalize;
-    border: 1px solid #ef5b70;    
+    border: 1px solid #ef5b70;
     color: #ef5b70;
     font-size: 16px;
     font-weight: bold;
