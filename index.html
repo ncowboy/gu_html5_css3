@@ -7,7 +7,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 
@@ -19,6 +20,31 @@
           class="logo-d">D</span></a>
       <form class="header__search_form" action="#">
         <button class="header__search_form__browse">Browse <i class="fas fa-sort-down"></i></button>
+        <div class="menu-dropdown menu-dropdown-browse">
+          <div class="menu-dropdown-col">
+            <div class="menu-dropdown-colgroup">
+              <header class="menu-dropdown-header">Women</header>
+              <a href="#" class="menu-dropdown-link">Dresses</a>
+              <a href="#" class="menu-dropdown-link">Tops</a>
+              <a href="#" class="menu-dropdown-link">Sweaters/Knits</a>
+              <a href="#" class="menu-dropdown-link">Jackets/Coats</a>
+              <a href="#" class="menu-dropdown-link">lazers</a>
+              <a href="#" class="menu-dropdown-link">Denim</a>
+              <a href="#" class="menu-dropdown-link">Leggings/Pants</a>
+              <a href="#" class="menu-dropdown-link">Skirts/Shorts</a>
+              <a href="#" class="menu-dropdown-link">Accessories </a>
+            </div>
+            <div class="menu-dropdown-colgroup">
+              <header class="menu-dropdown-header">Men</header>
+              <a href="#" class="menu-dropdown-link">Tops</a>
+              <a href="#" class="menu-dropdown-link">Sweaters/Knits</a>
+              <a href="#" class="menu-dropdown-link">Jackets/Coats</a>
+              <a href="#" class="menu-dropdown-link">lazers</a>
+              <a href="#" class="menu-dropdown-link">Denim</a>
+              <a href="#" class="menu-dropdown-link">Skirts/Shorts</a>
+            </div>
+          </div>
+        </div>
         <input class="header__search_form__text" type="text" placeholder="Search for Item..."/>
         <button class="header__search_form__submit" type="submit"><i class="fas fa-search"></i></button>
       </form>
@@ -27,6 +53,48 @@
       <a href="#" class="header-cart">
         <div class="header-cart-count"><span>2</span></div>
       </a>
+      <div class="menu-dropdown menu-dropdown-browse menu-dropdown-cart">
+        <div class="menu-dropdown-cart-item">
+          <div class="menu-dropdown-cart-img">
+            <img src="img/product1.jpg" alt="Cart Item">
+          </div>
+          <div class="menu-dropdown-cart-product">
+            <a href="#" class="menu-dropdown-cart-product-name">Rebox Zane</a>
+            <div class="menu-dropdown-cart-product-rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="menu-dropdown-cart-product-sum">1 <span class="menu-dropdown-cart-x"> x </span>$250</div>
+          </div>
+          <a href="#" class="menu-dropdown-cart-close"><i class="fas fa-times-circle"></i></a>
+        </div>
+        <div class="menu-dropdown-cart-item">
+          <div class="menu-dropdown-cart-img">
+            <img src="img/product4.jpg" alt="Cart Item">
+          </div>
+          <div class="menu-dropdown-cart-product">
+            <a href="#" class="menu-dropdown-cart-product-name">Rebox Zane</a>
+            <div class="menu-dropdown-cart-product-rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="menu-dropdown-cart-product-sum">1 <span class="menu-dropdown-cart-x"> x </span> $250</div>
+          </div>
+          <a href="#" class="menu-dropdown-cart-close"><i class="fas fa-times-circle"></i></a>
+        </div>
+        <div class="menu-dropdown-cart-total">
+          <div>total</div>
+          <div class="menu-dropdown-cart-total-sum">$500.00</div>
+        </div>
+        <a href="#" class="menu-cart-button menu-cart-button-checkout">checkout</a>
+        <a href="#" class="menu-cart-button menu-cart-button-cart">go to cart</a>
+      </div>
       <a class="button header-right__account_button" href="#">My Account <i class="fas fa-sort-down"></i></a>
     </div>
   </div>
@@ -44,7 +112,7 @@
               <a href="#" class="menu-dropdown-link">Tops</a>
               <a href="#" class="menu-dropdown-link">Sweaters/Knits</a>
               <a href="#" class="menu-dropdown-link">Jackets/Coats</a>
-              <a href="#" class="menu-dropdown-link">lazers</a>
+              <a href="#" class="menu-dropdown-link">lasers</a>
               <a href="#" class="menu-dropdown-link">Denim</a>
               <a href="#" class="menu-dropdown-link">Leggings/Pants</a>
               <a href="#" class="menu-dropdown-link">Skirts/Shorts</a>
@@ -474,8 +542,7 @@
       <p class="subscribe-text">for our newsletter and promotion</p>
       <form class="subscribe-form" action="#">
         <div class="subscribe-form-group">
-          <input class="subscribe-form-email" type="email" placeholder="enter your email">
-          <button class="subscribe-form-submit" name="submit">subscribe</button>
+          <input class="subscribe-form-email" type="email" placeholder="enter your email"><button class="subscribe-form-submit" name="submit">subscribe</button>
         </div>
       </form>
     </div>
@@ -581,9 +648,10 @@
 
   </div>
 </div>
-<script>
-    console.log(document.getElementsByClassName('menu-dropdown'));
-</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/popper.min.js"></script>
 </body>
 
 </html>
