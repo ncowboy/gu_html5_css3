@@ -7,7 +7,7 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-p{
+p {
     margin-bottom: 0;
 }
 
@@ -275,7 +275,6 @@ p{
 }
 
 
-
 .header-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -334,6 +333,7 @@ p{
     background-position: center;
     position: relative;
 }
+
 .header-cart-wrapper {
     padding: 13px;
     position: relative;
@@ -384,7 +384,7 @@ p{
     padding-left: 37px;
 }
 
-.menu-dropdown-browse-wrapper:hover .menu-dropdown-browse{
+.menu-dropdown-browse-wrapper:hover .menu-dropdown-browse {
     display: flex;
 }
 
@@ -432,9 +432,6 @@ p{
     padding-left: 16px;
     padding-right: 16px;
     box-sizing: content-box;
-}
-
-.header__search_form__text placeholder {
     color: #a4a4a4;
     font-size: 14px;
 }
@@ -514,7 +511,6 @@ p{
     text-transform: uppercase;
     text-decoration: none;
 }
-
 
 
 .menu-link-active {
@@ -644,7 +640,7 @@ p{
 
 .products-item-name:hover {
     text-decoration: none;
-    color: #222222;
+    color: #f16d7f;
 }
 
 .products-item-price {
@@ -980,8 +976,6 @@ p{
 }
 
 
-
-
 .catalog-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1037,7 +1031,6 @@ p{
 .catalog {
     padding-top: 60px;
 }
-
 
 
 .catalog-filter-trend {
@@ -1286,8 +1279,6 @@ p{
 }
 
 
-
-
 .catalog-item-retweet,
 .catalog-item-like {
     padding: 9px 19px;
@@ -1339,13 +1330,13 @@ p{
     top: 34px;
 }
 
-.menu-dropdown-cart{
+.menu-dropdown-cart {
     display: none;
     left: -37px;
     top: 51px;
 }
 
-.menu-dropdown-cart-item{
+.menu-dropdown-cart-item {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ededed;
@@ -1375,7 +1366,13 @@ p{
     margin-top: 9px;
     text-decoration: none;
 }
-.menu-dropdown-cart-product-rate{
+
+.menu-dropdown-cart-product-name:hover {
+    color: #f16d7f;
+    text-decoration: none;
+}
+
+.menu-dropdown-cart-product-rate {
     color: #e4af48;
     font-size: 12px;
     font-weight: 400;
@@ -1401,6 +1398,7 @@ p{
     font-size: 16px;
     font-weight: 400;
 }
+
 .menu-dropdown-cart-close:hover {
     color: #f16d7f;
     text-decoration: none;
@@ -1416,7 +1414,7 @@ p{
     margin-bottom: 21px;
 }
 
-.menu-cart-button{
+.menu-cart-button {
     display: block;
     font-size: 14px;
     font-weight: 700;
@@ -1449,13 +1447,14 @@ p{
     color: #4a4a4a;
     border: 1px solid #eaeaea;
 }
+
 .menu-cart-button-cart:hover {
     background-color: #4a4a4a;
     color: #fff;
     text-decoration: none;
 }
 
-.menu-dropdown-browse:before{
+.menu-dropdown-browse:before {
     left: 67px;
 }
 
@@ -1552,7 +1551,8 @@ p{
     opacity: 0;
 }
 
-.catalog-item-social a {}
+.catalog-item-social a {
+}
 
 .catalog-item-social {
     display: -webkit-flex;
