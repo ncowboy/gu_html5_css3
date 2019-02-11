@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.compil.css"/>
 </head>
+
 <body>
 <header class="header">
   <div class="container header-flex">
@@ -95,7 +97,7 @@
             <div class="menu-dropdown-cart-total-sum">$500.00</div>
           </div>
           <a href="#" class="menu-cart-button menu-cart-button-checkout">checkout</a>
-          <a href="cart.html" class="menu-cart-button menu-cart-button-cart">go to cart</a>
+          <a href="#" class="menu-cart-button menu-cart-button-cart">go to cart</a>
         </div>
 
       </div>
@@ -106,8 +108,8 @@
 <nav class="navigation">
   <div class="container">
     <ul class="menu">
-      <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
-      <li class="menu-item"><a href="product.html" class="menu-link menu-link-active">Man</a>
+      <li class="menu-item"><a href="index.html" class="menu-link menu-link-active">Home</a></li>
+      <li class="menu-item"><a href="product.html" class="menu-link">Man</a>
         <div class="menu-dropdown">
           <div class="menu-dropdown-col">
             <div class="menu-dropdown-colgroup">
@@ -116,7 +118,7 @@
               <a href="#" class="menu-dropdown-link">Tops</a>
               <a href="#" class="menu-dropdown-link">Sweaters/Knits</a>
               <a href="#" class="menu-dropdown-link">Jackets/Coats</a>
-              <a href="#" class="menu-dropdown-link">lazers</a>
+              <a href="#" class="menu-dropdown-link">lasers</a>
               <a href="#" class="menu-dropdown-link">Denim</a>
               <a href="#" class="menu-dropdown-link">Leggings/Pants</a>
               <a href="#" class="menu-dropdown-link">Skirts/Shorts</a>
@@ -300,11 +302,12 @@
           </div>
         </div>
       </li>
-      <li class="menu-item"><a href="#" class="menu-link">Featured</a></li>
+      <li class="menu-item"><a href="#products" class="menu-link">Featured</a></li>
       <li class="menu-item"><a href="#" class="menu-link">Hot Deals </a></li>
     </ul>
   </div>
 </nav>
+
 <section class="new-arrivals">
   <div class="container new-arrivals-wrapper">
     <h2 class="new-arrivals-h2">new arrivals</h2>
@@ -317,343 +320,129 @@
     </div>
   </div>
 </section>
-<div class="catalog">
-  <div class="container catalog-wrapper">
-    <nav class="catalog-menu">
-      <details class="catalog-menu-section" open>
-        <summary class="catalog-menu-category">
-          Category
-        </summary>
-        <ul class="catalog-menu-sections-list">
-          <li><a href="#" class="catalog-menu-section">Acessories</a></li>
-          <li><a href="#" class="catalog-menu-section">Bags</a></li>
-          <li><a href="#" class="catalog-menu-section">Denim</a></li>
-          <li><a href="#" class="catalog-menu-section">Hoodies & Sweetshots</a></li>
-          <li><a href="#" class="catalog-menu-section">Jackets & Coats</a></li>
-          <li><a href="#" class="catalog-menu-section">Pants</a></li>
-          <li><a href="#" class="catalog-menu-section">Polos</a></li>
-          <li><a href="#" class="catalog-menu-section">shirts</a></li>
-          <li><a href="#" class="catalog-menu-section">shoes</a></li>
-          <li><a href="#" class="catalog-menu-section">shorts</a></li>
-          <li><a href="#" class="catalog-menu-section">sweaters & knits</a></li>
-          <li><a href="#" class="catalog-menu-section">T-shirts</a></li>
-          <li><a href="#" class="catalog-menu-section">tanks</a></li>
-        </ul>
-      </details>
-      <details class="catalog-menu-section">
-        <summary class="catalog-menu-category">
-          Brand
-        </summary>
-        <ul class="catalog-menu-sections-list">
-          <li><a href="#" class="catalog-menu-section">new yorker</a></li>
-          <li><a href="#" class="catalog-menu-section">springfield</a></li>
-          <li><a href="#" class="catalog-menu-section">banderos</a></li>
-          <li><a href="#" class="catalog-menu-section">shoemetro</a></li>
-        </ul>
-      </details>
-      <details class="catalog-menu-section">
-        <summary class="catalog-menu-category">
-          Designer
-        </summary>
-        <ul class="catalog-menu-sections-list">
-          <li><a href="#" class="catalog-menu-section">слава зайцев</a></li>
-        </ul>
-      </details>
-    </nav>
-    <div class="catalog-body">
-      <div class="catalog-filters">
-        <div class="catalog-filters-filter catalog-filter-trending">
-          <header class="catalog-filter-header">trending now</header>
-          <div class="catalog-filter-trends">
-            <a href="#" class="catalog-filter-trend">bohemian</a>
-            <a href="#" class="catalog-filter-trend">floral</a>
-            <a href="#" class="catalog-filter-trend">lace</a>
-            <a href="#" class="catalog-filter-trend">floral</a>
-            <a href="#" class="catalog-filter-trend">lace</a>
-            <a href="#" class="catalog-filter-trend">bohemian</a>
-          </div>
-        </div>
-        <div class="catalog-filters-filter catalog-filter-size">
-          <header class="catalog-filter-header">size</header>
-          <div class="catalog-filter-sizes">
-            <div class="catalog-size-form-group">
-              <input class="catalog-checkbox" type="checkbox" id="size-xxs">
-              <label for="size-xxs">XXS</label>
+<div class="cart-content">
+  <div class="container cart-container">
+    <table class="table cart-content-table">
+      <thead class="cart-content-header">
+      <tr>
+        <th>Product Details</th>
+        <th>unite Price</th>
+        <th>Quantity</th>
+        <th>shipping</th>
+        <th>Subtotal</th>
+        <th>ACTION</th>
+      </tr>
+      </thead>
+      <tr class="cart-content-item">
+        <td>
+          <div class="cart-content-item-details d-flex">
+            <div class="cart-content-item-details-img">
+              <img src="img/product6.jpg" alt="Product">
             </div>
-            <div class="catalog-size-form-group">
-              <input class="catalog-checkbox" type="checkbox" id="size-xs">
-              <label for="size-xs">XS</label>
-            </div>
-            <div class="catalog-size-form-group">
-              <input class="catalog-checkbox" type="checkbox" id="size-s">
-              <label for="size-s">S</label>
-            </div>
-            <div class="catalog-size-form-group">
-              <input class="catalog-checkbox" type="checkbox" id="size-m">
-              <label for="size-m">m</label>
-            </div>
-            <div class="catalog-size-form-group">
-              <input class="catalog-checkbox" type="checkbox" id="size-l">
-              <label for="size-l">l</label>
-            </div>
-            <div class="catalog-size-form-group">
-              <input class="catalog-checkbox" type="checkbox" id="size-xl">
-              <label for="size-xl">Xl</label>
-            </div>
-            <div class="catalog-size-form-group">
-              <input class="catalog-checkbox" type="checkbox" id="size-xxl">
-              <label for="size-xxl">Xxl</label>
-
+            <div class="cart-content-item-details-text">
+              <a href="#" class="cart-content-item-details-name">
+                Mango People T-shirt
+              </a>
+              <p class="cart-content-item-details-color"><span class="cart-content-item-details-label">color: </span>red
+              </p>
+              <p class="cart-content-item-details-size"><span class="cart-content-item-details-label">size: </span>XIi
+              </p>
             </div>
           </div>
-
-        </div>
-        <div class="catalog-filters-filter catalog-filter-price">
-          <header class="catalog-filter-header">price</header>
-          <div class="catalog-filter-prices">
-            <form oninput="result.value=('$' + range.value)" action="">
-              <input type="range" value=100 name="range" class="catalog-price-range" min="10" max="1000" step="2">
-              <output name="result" for="range">$100</output>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="catalog-options">
-        <div class="catalog-options-sort">
-          <label for="catalog-sort">sort by</label>
-          <select name="catalog-sort" id="catalog-sort">
-            <option value="name">name</option>
-            <option value="price">price</option>
-          </select>
-        </div>
-        <div class="catalog-options-show">
-          <label for="catalog-show">show</label>
-          <select name="catalog-show" id="catalog-show">
-            <option value="name">9</option>
-            <option value="price">18</option>
-            <option value="price">27</option>
-            <option value="price">36</option>
-          </select>
-        </div>
-      </div>
-      <div class="catalog-items">
-        <div class="products-items-container catalog-items-container">
-          <div class="products-item catalog-item">
-            <div class="products-item-wrapper">
-              <div class="catalog-item-hover">
-                <a href="#" class="products-cart catalog-cart">
-                  <div class="products-cart-bg"></div>
-                  <div class="products-cart-text">Add to Cart</div>
-                </a>
-                <div class="catalog-item-social">
-                  <a href="#" class="catalog-item-retweet"><i class="fas fa-retweet"></i></a>
-                  <a href="#" class="catalog-item-like"><i class="far fa-heart"></i></a>
-                </div>
-              </div>
-              <div class="products-item-img-wrapper">
-                <img class="products-item-img" src="img/product1.jpg" alt="Product">
-              </div>
-              <a href="#" class="products-item-name">Mango People T-shirt</a>
-              <p class="products-item-price">$52.00</p>
+        </td>
+        <td>$150</td>
+        <td><input type="number" value="2" min="0" max="100"></td>
+        <td>FREE</td>
+        <td>$300</td>
+        <td><a href="#" class="menu-dropdown-cart-close"><i class="fas fa-times-circle"></i></a></td>
+      </tr>
+      <tr class="cart-content-item">
+        <td>
+          <div class="cart-content-item-details d-flex">
+            <div class="cart-content-item-details-img">
+              <img src="img/product3.jpg" alt="Product">
+            </div>
+            <div class="cart-content-item-details-text">
+              <a href="#" class="cart-content-item-details-name">
+                Mango People T-shirt
+              </a>
+              <p class="cart-content-item-details-color"><span class="cart-content-item-details-label">color: </span>red
+              </p>
+              <p class="cart-content-item-details-size"><span class="cart-content-item-details-label">size: </span>XIi
+              </p>
             </div>
           </div>
-          <div class="products-item catalog-item">
-            <div class="products-item-wrapper">
-              <div class="catalog-item-hover">
-                <a href="#" class="products-cart catalog-cart">
-                  <div class="products-cart-bg"></div>
-                  <div class="products-cart-text">Add to Cart</div>
-                </a>
-                <div class="catalog-item-social">
-                  <a href="#" class="catalog-item-retweet"><i class="fas fa-retweet"></i></a>
-                  <a href="#" class="catalog-item-like"><i class="far fa-heart"></i></a>
-                </div>
-              </div>
-              <div class="products-item-img-wrapper">
-                <img class="products-item-img" src="img/product2.png" alt="Product">
-              </div>
-              <a href="#" class="products-item-name">Mango People T-shirt</a>
-              <p class="products-item-price">$52.00</p>
+        </td>
+        <td>$150</td>
+        <td><input type="number" value="2" min="0" max="100"></td>
+        <td>FREE</td>
+        <td>$300</td>
+        <td><a href="#" class="menu-dropdown-cart-close"><i class="fas fa-times-circle"></i></a></td>
+      </tr>
+      <tr class="cart-content-item">
+        <td>
+          <div class="cart-content-item-details d-flex">
+            <div class="cart-content-item-details-img">
+              <img src="img/product5.jpg" alt="Product">
+            </div>
+            <div class="cart-content-item-details-text">
+              <a href="#" class="cart-content-item-details-name">
+                Mango People T-shirt
+              </a>
+              <p class="cart-content-item-details-color"><span class="cart-content-item-details-label">color: </span>red
+              </p>
+              <p class="cart-content-item-details-size"><span class="cart-content-item-details-label">size: </span>XIi
+              </p>
             </div>
           </div>
-          <div class="products-item catalog-item">
-            <div class="products-item-wrapper">
-              <div class="catalog-item-hover">
-                <a href="#" class="products-cart catalog-cart">
-                  <div class="products-cart-bg"></div>
-                  <div class="products-cart-text">Add to Cart</div>
-                </a>
-                <div class="catalog-item-social">
-                  <a href="#" class="catalog-item-retweet"><i class="fas fa-retweet"></i></a>
-                  <a href="#" class="catalog-item-like"><i class="far fa-heart"></i></a>
-                </div>
-              </div>
-              <div class="products-item-img-wrapper">
-                <img class="products-item-img" src="img/product3.jpg" alt="Product">
-              </div>
-              <a href="#" class="products-item-name">Mango People T-shirt</a>
-              <p class="products-item-price">$52.00</p>
-            </div>
-          </div>
-          <div class="products-item catalog-item">
-            <div class="products-item-wrapper">
-              <div class="catalog-item-hover">
-                <a href="#" class="products-cart catalog-cart">
-                  <div class="products-cart-bg"></div>
-                  <div class="products-cart-text">Add to Cart</div>
-                </a>
-                <div class="catalog-item-social">
-                  <a href="#" class="catalog-item-retweet"><i class="fas fa-retweet"></i></a>
-                  <a href="#" class="catalog-item-like"><i class="far fa-heart"></i></a>
-                </div>
-              </div>
-              <div class="products-item-img-wrapper">
-                <img class="products-item-img" src="img/product4.jpg" alt="Product">
-              </div>
-              <a href="#" class="products-item-name">Mango People T-shirt</a>
-              <p class="products-item-price">$52.00</p>
-            </div>
-          </div>
-          <div class="products-item catalog-item">
-            <div class="products-item-wrapper">
-              <div class="catalog-item-hover">
-                <a href="#" class="products-cart catalog-cart">
-                  <div class="products-cart-bg"></div>
-                  <div class="products-cart-text">Add to Cart</div>
-                </a>
-                <div class="catalog-item-social">
-                  <a href="#" class="catalog-item-retweet"><i class="fas fa-retweet"></i></a>
-                  <a href="#" class="catalog-item-like"><i class="far fa-heart"></i></a>
-                </div>
-              </div>
-              <div class="products-item-img-wrapper">
-                <img class="products-item-img" src="img/product5.jpg" alt="Product">
-              </div>
-              <a href="#" class="products-item-name">Mango People T-shirt</a>
-              <p class="products-item-price">$52.00</p>
-            </div>
-          </div>
-          <div class="products-item catalog-item">
-            <div class="products-item-wrapper">
-              <div class="catalog-item-hover">
-                <a href="#" class="products-cart catalog-cart">
-                  <div class="products-cart-bg"></div>
-                  <div class="products-cart-text">Add to Cart</div>
-                </a>
-                <div class="catalog-item-social">
-                  <a href="#" class="catalog-item-retweet"><i class="fas fa-retweet"></i></a>
-                  <a href="#" class="catalog-item-like"><i class="far fa-heart"></i></a>
-                </div>
-              </div>
-              <div class="products-item-img-wrapper">
-                <img class="products-item-img" src="img/product6.jpg" alt="Product">
-              </div>
-              <a href="#" class="products-item-name">Mango People T-shirt</a>
-              <p class="products-item-price">$52.00</p>
-            </div>
-          </div>
-          <div class="products-item catalog-item">
-            <div class="products-item-wrapper">
-              <div class="catalog-item-hover">
-                <a href="#" class="products-cart catalog-cart">
-                  <div class="products-cart-bg"></div>
-                  <div class="products-cart-text">Add to Cart</div>
-                </a>
-                <div class="catalog-item-social">
-                  <a href="#" class="catalog-item-retweet"><i class="fas fa-retweet"></i></a>
-                  <a href="#" class="catalog-item-like"><i class="far fa-heart"></i></a>
-                </div>
-              </div>
-              <div class="products-item-img-wrapper">
-                <img class="products-item-img" src="img/product7.jpg" alt="Product">
-              </div>
-              <a href="#" class="products-item-name">Mango People T-shirt</a>
-              <p class="products-item-price">$52.00</p>
-            </div>
-          </div>
-          <div class="products-item catalog-item">
-            <div class="products-item-wrapper">
-              <div class="catalog-item-hover">
-                <a href="#" class="products-cart catalog-cart">
-                  <div class="products-cart-bg"></div>
-                  <div class="products-cart-text">Add to Cart</div>
-                </a>
-                <div class="catalog-item-social">
-                  <a href="#" class="catalog-item-retweet"><i class="fas fa-retweet"></i></a>
-                  <a href="#" class="catalog-item-like"><i class="far fa-heart"></i></a>
-                </div>
-              </div>
-              <div class="products-item-img-wrapper">
-                <img class="products-item-img" src="img/product8.jpg" alt="Product">
-              </div>
-              <a href="#" class="products-item-name">Mango People T-shirt</a>
-              <p class="products-item-price">$52.00</p>
-            </div>
-          </div>
-          <div class="products-item catalog-item">
-            <div class="products-item-wrapper">
-              <div class="catalog-item-hover">
-                <a href="#" class="products-cart catalog-cart">
-                  <div class="products-cart-bg"></div>
-                  <div class="products-cart-text">Add to Cart</div>
-                </a>
-                <div class="catalog-item-social">
-                  <a href="#" class="catalog-item-retweet"><i class="fas fa-retweet"></i></a>
-                  <a href="#" class="catalog-item-like"><i class="far fa-heart"></i></a>
-                </div>
-              </div>
-              <div class="products-item-img-wrapper">
-                <img class="products-item-img" src="img/product8.jpg" alt="Product">
-              </div>
-              <a href="#" class="products-item-name">Mango People T-shirt</a>
-              <p class="products-item-price">$52.00</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="catalog-controls">
-        <div class="catalog-pagination">
-          <a href="#" class="catalog-pagination-item"><i class="fas fa-chevron-left"></i></a>
-          <a href="#" class="catalog-pagination-item">1</a>
-          <a href="#" class="catalog-pagination-item">2</a>
-          <a href="#" class="catalog-pagination-item">3</a>
-          <a href="#" class="catalog-pagination-item">4</a>
-          <a href="#" class="catalog-pagination-item">5</a>
-          <a href="#" class="catalog-pagination-item">6</a>
-          <div class="catalog-pagination-item catalog-pagination-inactive">....</div>
-          <a href="#" class="catalog-pagination-item">20</a>
-          <a href="#" class="catalog-pagination-item"><i class="fas fa-chevron-right"></i></a>
-        </div>
-        <button class="catalog-pagination-button">view all</button>
-
-      </div>
-    </div>
+        </td>
+        <td>$150</td>
+        <td><input type="number" value="2" min="0" max="100"></td>
+        <td>FREE</td>
+        <td>$300</td>
+        <td><a href="#" class="menu-dropdown-cart-close"><i class="fas fa-times-circle"></i></a></td>
+      </tr>
+    </table>
   </div>
 </div>
-<div class="feature-hor">
-  <div class="container feature-wrapper">
-    <div class="feature-hor-item">
-      <div class="feature-hor-img"><img src="img/feature-truck.svg" alt="feature1"></div>
-      <header class="feature-right-header">Free Delivery</header>
-      <p class="feature-right-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-        extensive models.</p>
-    </div>
-    <div class="feature-hor-item">
-      <div class="feature-hor-img"><img src="img/feature-discount.png" alt="feature2"></div>
-      <header class="feature-right-header">Sales & discounts</header>
-      <p class="feature-right-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-        extensive models.</p>
-    </div>
-    <div class="feature-hor-item">
-      <div class="feature-hor-img"><img src="img/feature-crown.png" alt="feature3"></div>
-      <header class="feature-right-header">Quality assurance</header>
-      <p class="feature-right-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with
-        extensive models.</p>
-    </div>
+<div class="cart-controls">
+  <div class="container d-flex justify-content-between">
+    <a href="#" class="menu-cart-button menu-cart-button-cart cart-button">cLEAR SHOPPING CART</a>
+    <a href="#" class="menu-cart-button menu-cart-button-cart cart-button">cONTINUE sHOPPING</a>
   </div>
 </div>
-
-
+<div class="cart-checkout">
+  <div class="container">
+    <form action="#" class="d-flex justify-content-between">
+      <div class="form-group cart-checkout-col d-flex flex-column">
+        <header class="cart-checkout-form-header">Shipping Adress</header>
+        <select name="cart-checkout-form-country" id="">
+          <option>bangladesh</option>
+          <option>bangladesh</option>
+          <option>bangladesh</option>
+        </select>
+        <input type="text" placeholder="state">
+        <input type="text" placeholder="postcode / zip">
+        <button class="cart-checkout-form-small_btn">get a quote</button>
+      </div>
+      <div class="form-group cart-checkout-col d-flex flex-column">
+        <header class="cart-checkout-form-header">coupon discount</header>
+        <p class="cart-checkout-form-discount-text">
+          Enter your coupon code if you have one
+        </p>
+        <input type="text" placeholder="coupon #">
+        <button class="cart-checkout-form-small_btn">Apply coupon</button>
+      </div>
+      <div class="cart-checkout-form-submit cart-checkout-col">
+        <div class="cart-checkout-form-submit-wrapper">
+          <p class="cart-checkout-form-submit-sub_total">Sub total <span>$900</span></p>
+          <p class="cart-checkout-form-submit-grand_total">grand total <span>$900</span></p>
+          <button type="submit" class="cart-checkout-form-submit_btn">proceed to checkout</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
 <div class="subscribe">
   <div class="subscribe-feedbacks">
     <div class="subscribe-feedbacks-slider">
