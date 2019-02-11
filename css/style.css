@@ -722,15 +722,6 @@ p {
 
 }
 
-.subscribe-feedbacks {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    width: 50%;
-    padding-top: 111px;
-    padding-bottom: 120px;
-    border-right: 1px solid #e8e8e8;
-}
-
 .subscribe-feedbacks-controls {
     margin-left: 111px;
     margin-top: 31px;
@@ -754,10 +745,10 @@ p {
 }
 
 .subscribe-feedbacks-slider {
-    /*position: relative;*/
-    margin-left: 230px;
-    margin-right: 72px;
-
+    padding-top: 111px;
+    padding-bottom: 120px;
+    width: 50%;
+    border-right: 1px solid #fff;
 }
 
 .subscribe-feedbacks-slider input {
@@ -766,6 +757,7 @@ p {
 
 .subscribe-feedbacks-slider-right {
     padding-left: 28px;
+    padding-right: 72px;
 }
 
 .subscribe-feedbacks-slider-slides {
@@ -819,7 +811,8 @@ p {
 
 .subscribe-right {
     padding-top: 148px;
-    padding-left: 92px;
+    width: 50%;
+    text-align: center;
 }
 
 .subscribe-header {
