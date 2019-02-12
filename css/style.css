@@ -153,7 +153,7 @@ p {
 }
 
 .footer-bottom {
-    margin-top: 89px;
+    margin-top: 42px;
     background-color: #e6e6e6;
     padding: 24px 0;
 }
@@ -455,6 +455,8 @@ p {
     color: #f16d7f;
     font-weight: 400;
     letter-spacing: 0.68px;
+    display: block;
+    margin-top: 5px;
 }
 
 .logo-img {
@@ -500,6 +502,7 @@ p {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
+    margin-bottom: 0;
 }
 
 .menu-link {
@@ -931,7 +934,7 @@ p {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 14px 0 14px 10px;
+    padding: 9px 0 9px 10px;
     color: #6f6e6e;
     font-size: 14px;
     font-weight: 700;
@@ -980,7 +983,7 @@ p {
 
 .catalog-menu {
     width: 25%;
-    padding-right: 28px;
+    padding-right: 46px;
 }
 
 .catalog-menu-sections-list {
@@ -1189,7 +1192,7 @@ p {
 
 .catalog-body {
     width: 75%;
-    padding-left: 28px;
+    padding-left: 11px;
 }
 
 .catalog-options {
