@@ -168,4 +168,32 @@ input:focus {
   outline: 1px dotted #222;
 }
 
+.checkout-form__legend {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.checkout-form__hint_main {
+  color: #222222;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.checkout-form__hint_secondary {
+  color: #b3b2b2;
+  font-size: 13px;
+  font-weight: 400;
+}
+.checkout-form__input_radio {
+  width: 14px;
+  height: 14px;
+}
+.checkout-form__label {
+  color: #222222;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=style.compil.css.map */
