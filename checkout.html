@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/style.compil.css"/>
 </head>
@@ -331,19 +330,62 @@
           <div class="checkout-form__form-group col-md-6">
             <p class="checkout-form__hint_main">Check as a guest or register</p>
             <p class="checkout-form__hint_secondary">Register with us for future convenience</p>
-            <label for="guest" class="checkout-form_label">
+            <label for="guest" class="checkout-form__label">
               <input class="checkout-form__input_radio" type="radio" name="guest-register" id="guest">
               checkout as guest
             </label>
-            <label for="register" class="checkout-form_label">
+            <label for="register" class="checkout-form__label">
               <input class="checkout-form__input_radio" type="radio" name="guest-register" id="register">
               register
             </label>
+            <p class="checkout-form__hint_main">register and save time!</p>
+            <p class="checkout-form__hint_secondary">Register with us for future convenience</p>
+            <div class="checkout-form__checkout-pluses">
+              <p class="checkout-form__hint_secondary">Fast and easy checkout</p>
+              <p class="checkout-form__hint_secondary">Easy access to your order history and status</p>
+            </div>
+            <button class="checkout-form__button">Continue</button>
           </div>
           <div class="checkout-form__form-group col-md-6">
+            <p class="checkout-form__hint_main">Already registed?</p>
+            <p class="checkout-form__hint_secondary">Please log in below</p>
+            <label for="email" class="checkout-form__label">EMAIL ADDRESS</label>
+            <input class="checkout-form__input" type="text" name="email" id="email">
+            <label for="password" class="checkout-form__label">PASSWORD</label>
+            <input class="checkout-form__input" type="text" name="password" id="password">
+            <p class="checkout-form__warning">* Required Fileds</p>
+            <div class="d-flex">
+              <button class="checkout-form__button">log in</button>
+              <a class="checkout-form__warning_pass-restore" href="#">Forgot Password ?</a>
+            </div>
 
           </div>
         </div>
+      </fieldset>
+      <fieldset class="checkout-form__fieldset">
+        <legend class="checkout-form__legend">
+          02.   BILLING INFORMATION
+        </legend>
+      </fieldset>
+      <fieldset class="checkout-form__fieldset">
+        <legend class="checkout-form__legend">
+          03.   SHIPPING INFORMATION
+        </legend>
+      </fieldset>
+      <fieldset class="checkout-form__fieldset">
+        <legend class="checkout-form__legend">
+          04.   SHIPPING METHOD
+        </legend>
+      </fieldset>
+      <fieldset class="checkout-form__fieldset">
+        <legend class="checkout-form__legend">
+          05.   PAYMENT METHOD
+        </legend>
+      </fieldset>
+      <fieldset class="checkout-form__fieldset">
+        <legend class="checkout-form__legend">
+          06.   ORDER REVIEW
+        </legend>
       </fieldset>
     </form>
   </div>
