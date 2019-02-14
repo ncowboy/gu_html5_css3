@@ -95,8 +95,8 @@
             <div>total</div>
             <div class="menu-dropdown-cart-total-sum">$500.00</div>
           </div>
-          <a href="#" class="menu-cart-button menu-cart-button-checkout">checkout</a>
-          <a href="#" class="menu-cart-button menu-cart-button-cart">go to cart</a>
+          <a href="checkout.html" class="menu-cart-button menu-cart-button-checkout">checkout</a>
+          <a href="cart.html" class="menu-cart-button menu-cart-button-cart">go to cart</a>
         </div>
 
       </div>
@@ -330,14 +330,16 @@
           <div class="checkout-form__form-group col-md-6">
             <p class="checkout-form__hint_main">Check as a guest or register</p>
             <p class="checkout-form__hint_secondary">Register with us for future convenience</p>
-            <label for="guest" class="checkout-form__label">
-              <input class="checkout-form__input_radio" type="radio" name="guest-register" id="guest">
-              checkout as guest
-            </label>
-            <label for="register" class="checkout-form__label">
-              <input class="checkout-form__input_radio" type="radio" name="guest-register" id="register">
-              register
-            </label>
+            <div class="checkout-form__if-guest-inputs">
+              <label for="guest" class="checkout-form__label checkout-form__label_for-radio">
+                <input class="checkout-form__input_radio" type="radio" name="guest-register" id="guest">
+                <span class="checkout-form__label-text ">checkout as guest</span>
+              </label>
+              <label for="register" class="checkout-form__label checkout-form__label_for-radio">
+                <input class="checkout-form__input_radio" type="radio" name="guest-register" id="register">
+                <span class="checkout-form__label-text ">register</span>
+              </label>
+            </div>
             <p class="checkout-form__hint_main">register and save time!</p>
             <p class="checkout-form__hint_secondary">Register with us for future convenience</p>
             <div class="checkout-form__checkout-pluses">
@@ -349,14 +351,14 @@
           <div class="checkout-form__form-group col-md-6">
             <p class="checkout-form__hint_main">Already registed?</p>
             <p class="checkout-form__hint_secondary">Please log in below</p>
-            <label for="email" class="checkout-form__label">EMAIL ADDRESS</label>
+            <label for="email" class="checkout-form__label checkout-form__label_for-text">EMAIL ADDRESS <span class="checkout-form__warning">*</span></label>
             <input class="checkout-form__input" type="text" name="email" id="email">
-            <label for="password" class="checkout-form__label">PASSWORD</label>
+            <label for="password" class="checkout-form__label checkout-form__label_for-text">PASSWORD<span class="checkout-form__warning">*</span></label>
             <input class="checkout-form__input" type="text" name="password" id="password">
-            <p class="checkout-form__warning">* Required Fileds</p>
-            <div class="d-flex">
+            <p class="checkout-form__warning checkout-form__warning_required">* Required Fileds</p>
+            <div class="d-flex mt-3">
               <button class="checkout-form__button">log in</button>
-              <a class="checkout-form__warning_pass-restore" href="#">Forgot Password ?</a>
+              <a class="checkout-form__warning checkout-form__warning_pass-restore" href="#">Forgot Password ?</a>
             </div>
 
           </div>
