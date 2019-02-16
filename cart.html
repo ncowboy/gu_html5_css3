@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="css/style.compil.css"/>
 </head>
@@ -313,7 +312,7 @@
     <h2 class="new-arrivals-h2">new arrivals</h2>
     <div class="new-arrivals-nav">
       <p class="new-arrivals-breadcrumbs">
-        <a href="#" class="new-arrivals-link">home</a><span>/</span>
+        <a href="index.html" class="new-arrivals-link">home</a><span>/</span>
         <a href="#" class="new-arrivals-link">men</a><span>/</span>
         <a href="#" class="new-arrivals-link">new arrivals</a>
       </p>
@@ -444,61 +443,64 @@
   </div>
 </div>
 <div class="subscribe">
-  <div class="subscribe-feedbacks">
-    <div class="subscribe-feedbacks-slider">
-      <input type="radio" name="point" id="subscribe-slide1" checked>
-      <input type="radio" name="point" id="subscribe-slide2">
-      <input type="radio" name="point" id="subscribe-slide3">
-      <div class="subscribe-feedbacks-slider-body">
-        <div class="subscribe-feedbacks-slider-slides slide1">
-          <div class="subscribe-feedbacks-slider-photo"></div>
-          <div class="subscribe-feedbacks-slider-right">
-            <p class="subscribe-feedbacks-text">Lorem1 ipsum dolor sit amet consectetur adipisicing
-              elit. At doloremque quasi minus in asperiores, obcaecati earum libero.
-            <p>
-            <p class="subscribe-feedbacks-name">Bin Burhan1</p>
-            <p class="subscribe-feedbacks-location">Dhaka, Bd</p>
+  <div class="container">
+    <div class="subscribe-feedbacks d-flex">
+      <div class="subscribe-feedbacks-slider">
+        <input type="radio" name="point" id="subscribe-slide1" checked>
+        <input type="radio" name="point" id="subscribe-slide2">
+        <input type="radio" name="point" id="subscribe-slide3">
+        <div class="subscribe-feedbacks-slider-body">
+          <div class="subscribe-feedbacks-slider-slides slide1">
+            <div class="subscribe-feedbacks-slider-photo"></div>
+            <div class="subscribe-feedbacks-slider-right">
+              <p class="subscribe-feedbacks-text">Lorem1 ipsum dolor sit amet consectetur adipisicing
+                elit. At doloremque quasi minus in asperiores, obcaecati earum libero.
+              <p>
+              <p class="subscribe-feedbacks-name">Bin Burhan1</p>
+              <p class="subscribe-feedbacks-location">Dhaka, Bd</p>
+            </div>
+          </div>
+          <div class="subscribe-feedbacks-slider-slides slide2">
+            <div class="subscribe-feedbacks-slider-photo"></div>
+            <div class="subscribe-feedbacks-slider-right">
+              <p class="subscribe-feedbacks-text">Lorem2 ipsum dolor sit amet consectetur adipisicing
+                elit. At doloremque quasi minus in asperiores, obcaecati earum libero.
+              <p>
+              <p class="subscribe-feedbacks-name">Bin Burhan2</p>
+              <p class="subscribe-feedbacks-location">Dhaka, Bd</p>
+            </div>
+          </div>
+          <div class="subscribe-feedbacks-slider-slides slide3">
+            <div class="subscribe-feedbacks-slider-photo"></div>
+            <div class="subscribe-feedbacks-slider-right">
+              <p class="subscribe-feedbacks-text">Lorem3 ipsum dolor sit amet consectetur adipisicing
+                elit. At doloremque quasi minus in asperiores, obcaecati earum libero.
+              <p>
+              <p class="subscribe-feedbacks-name">Bin Burhan3</p>
+              <p class="subscribe-feedbacks-location">Dhaka, Bd</p>
+            </div>
           </div>
         </div>
-        <div class="subscribe-feedbacks-slider-slides slide2">
-          <div class="subscribe-feedbacks-slider-photo"></div>
-          <div class="subscribe-feedbacks-slider-right">
-            <p class="subscribe-feedbacks-text">Lorem2 ipsum dolor sit amet consectetur adipisicing
-              elit. At doloremque quasi minus in asperiores, obcaecati earum libero.
-            <p>
-            <p class="subscribe-feedbacks-name">Bin Burhan2</p>
-            <p class="subscribe-feedbacks-location">Dhaka, Bd</p>
-          </div>
-        </div>
-        <div class="subscribe-feedbacks-slider-slides slide3">
-          <div class="subscribe-feedbacks-slider-photo"></div>
-          <div class="subscribe-feedbacks-slider-right">
-            <p class="subscribe-feedbacks-text">Lorem3 ipsum dolor sit amet consectetur adipisicing
-              elit. At doloremque quasi minus in asperiores, obcaecati earum libero.
-            <p>
-            <p class="subscribe-feedbacks-name">Bin Burhan3</p>
-            <p class="subscribe-feedbacks-location">Dhaka, Bd</p>
-          </div>
+        <div class="subscribe-feedbacks-controls">
+          <label for="subscribe-slide1"></label>
+          <label for="subscribe-slide2"></label>
+          <label for="subscribe-slide3"></label>
         </div>
       </div>
-      <div class="subscribe-feedbacks-controls">
-        <label for="subscribe-slide1"></label>
-        <label for="subscribe-slide2"></label>
-        <label for="subscribe-slide3"></label>
+      <div class="subscribe-right">
+        <div class="subscribe-wrapper">
+          <header class="subscribe-header">subscribe</header>
+          <p class="subscribe-text">for our newsletter and promotion</p>
+          <form class="subscribe-form" action="#">
+            <div class="subscribe-form-group">
+              <input class="subscribe-form-email" type="email" placeholder="enter your email">
+              <button class="subscribe-form-submit" name="submit">subscribe</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="subscribe-right">
-    <div class="subscribe-wrapper">
-      <header class="subscribe-header">subscribe</header>
-      <p class="subscribe-text">for our newsletter and promotion</p>
-      <form class="subscribe-form" action="#">
-        <div class="subscribe-form-group">
-          <input class="subscribe-form-email" type="email" placeholder="enter your email">
-          <button class="subscribe-form-submit" name="submit">subscribe</button>
-        </div>
-      </form>
-    </div>
+
   </div>
 </div>
 <div class="footer">
