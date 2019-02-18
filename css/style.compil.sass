@@ -25,7 +25,7 @@ button:focus
   padding-left: 38px
   padding-right: 38px
 
-// Cart start
+// Cart
 .cart-content
   &-item input
     border: 1px solid #eaeaea
@@ -173,7 +173,7 @@ button:focus
 // Cart end
 
 
-// Checkout start
+// Checkout
 
 .checkout
   padding-top: 56px
@@ -271,6 +271,121 @@ button:focus
       font-weight: 400
       text-transform: uppercase
 
+// Checkout end
+
+
+// Single product page
+
+.product-carousel
+  border-bottom: 1px solid #eaeaea
+  background-color: #f7f7f7
+  text-align: center
+  padding: 11px 0 42px
+  &__icon
+    width: auto
+    height: auto
+    padding: 5px 15px
+    font-size: 24px
+    background-color: #2a2a2a
+    background-image: none
+  &__control
+    width: 4%
+
+.product-details
+  &__inner
+    padding: 0 261px
+    text-align: center
+  &__category
+    color: $pink
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    &:hover
+      color: $dark_gray
+  &__divider
+    position: relative
+    margin-top: 12px
+    &_outer
+      width: 147px
+      height: 1px
+      background-color: #eaeaea
+      position: absolute
+      top: 1px
+      left: 234px
+    &_inner
+      width: 63px
+      height: 3px
+      background-color: $pink
+      position: absolute
+      top: 0
+      left: 277px
+  &__header
+    color: #4d4d4d
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-transform: uppercase
+    margin-top: 32px
+  &__text
+    color: #5e5e5e
+    font-size: 14px
+    font-weight: 300
+    line-height: 24px
+    margin-top: 60px
+  &__chars
+    margin-top: 25px
+    display: flex
+    justify-content: space-evenly
+  &__char
+    color: #b9b9b9
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    &-value
+      color: $dark_gray
+  &__price
+    color: $pink
+    font-size: 24px
+    font-weight: 700
+    margin-top: 30px
+    line-height: 1
+  &__actions
+    margin-top: 60px
+
+  &__action
+    display: flex
+    flex-direction: column
+    label
+      color: #2f2f2f
+      font-size: 14px
+      font-weight: 700
+      line-height: 24px
+      text-align: left
+      text-transform: uppercase
+    input, select
+      width: 144px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      color: #bcbcbc
+      font-size: 14px
+      font-weight: 400
+      padding: 7px 14px
+    &_size select
+      text-transform: uppercase
+
+
+
+  border: 1px solid #eaeaea
+  position: relative
+  top: -85px
+  background-color: #fff
+  padding-top: 73px
+  padding-bottom: 132px
+
+
+.product-description
+  border-bottom: 1px solid #eaeaea
+  padding-bottom: 43px
 
 
 

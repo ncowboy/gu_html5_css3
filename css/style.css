@@ -427,7 +427,7 @@ p {
 }
 
 .header__search_form__text {
-    width: 317px;
+    width: 240px;
     height: 36px;
     border: 1px solid #e6e6e6;
     padding-left: 16px;
@@ -449,7 +449,7 @@ p {
 
 .logo-bran {
     font-weight: 300;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .logo-d {
@@ -461,7 +461,7 @@ p {
 }
 
 .logo-img {
-    margin-right: 13px;
+    margin-right: 9px;
 }
 
 .button {
@@ -507,7 +507,7 @@ p {
 }
 
 .menu-link {
-    padding: 17px 24px;
+    padding: 14px 23px;
     display: block;
     color: #222222;
     font-size: 14px;
