@@ -293,6 +293,9 @@ button:focus
 
 .product-details
   &__inner
+    display: flex
+    flex-direction: column
+    align-items: center
     padding: 0 261px
     text-align: center
   &__category
@@ -351,7 +354,7 @@ button:focus
     line-height: 1
   &__actions
     margin-top: 60px
-
+    width: 87.175324675%
   &__action
     display: flex
     flex-direction: column
@@ -372,7 +375,19 @@ button:focus
       padding: 7px 14px
     &_size select
       text-transform: uppercase
-
+  &__button-cart
+    width: 100%
+    border: 1px solid $pink
+    background-color: #fff
+    margin-top: 27px
+    color: $pink
+    padding: 15px 0
+    text-transform: capitalize
+    cursor: pointer
+    &:hover
+      background-color: $pink
+      color: #fff
+      text-decoration: none
 
 
   border: 1px solid #eaeaea
@@ -386,6 +401,15 @@ button:focus
 .product-description
   border-bottom: 1px solid #eaeaea
   padding-bottom: 43px
+
+.also-like h4
+  color: #4d4d4d
+  font-size: 24px
+  font-weight: 400
+  line-height: 20px
+  text-transform: uppercase
+  text-align: center
+
 
 
 
